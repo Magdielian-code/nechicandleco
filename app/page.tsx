@@ -33,7 +33,7 @@ export default function Home() {
           <div className="flex flex-wrap items-center gap-5">
             <div className="flex items-center gap-2">
               <span className="text-base">☎</span>
-              <span>+2146414547</span>
+              <span>+2349060222307</span>
             </div>
             <div className="flex items-center gap-2">
               <span className="text-base">✉</span>
@@ -144,6 +144,110 @@ export default function Home() {
           </div>
 
           <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-10 bg-[linear-gradient(180deg,transparent,rgba(255,255,255,0.06))]" />
+        </section>
+
+        <section className="bg-[#f4ecea] py-20 sm:py-28 lg:py-32">
+          <div className="mx-auto max-w-[1600px] px-5 sm:px-8 lg:px-12">
+            <div className="mb-12 text-center">
+              <p className="mb-3 text-sm uppercase tracking-[0.32em] text-[#7b4d9d]/70">
+                Top Categories
+              </p>
+              <h2
+                className="text-[clamp(2.2rem,4.5vw,3.8rem)] leading-[0.95] tracking-[-0.02em] text-slate-950"
+                style={{ fontFamily: "var(--font-cormorant)" }}
+              >
+                Signature Scent Selections
+              </h2>
+              <div className="mx-auto mt-6 h-1 w-16 rounded-full bg-[#7b4d9d]" />
+            </div>
+
+            <div className="grid grid-cols-1 gap-6 md:grid-cols-3 md:grid-rows-2 lg:gap-8">
+              {/* Card 1 - Jar Candle (Full height, left column) */}
+              <div className="md:row-span-2">
+                <div className="group relative overflow-hidden rounded-2xl bg-white shadow-lg transition-transform duration-300 hover:shadow-xl hover:-translate-y-1 h-full">
+                  <div className="relative h-full w-full overflow-hidden bg-gradient-to-br from-slate-100 to-slate-200">
+                    <img
+                      src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?w=500&h=650&fit=crop&q=90"
+                      alt="Jar Candle"
+                      className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                  </div>
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/50 to-transparent px-6 py-6">
+                    <p className="bg-white/95 px-4 py-2.5 text-center text-sm font-semibold text-slate-950 backdrop-blur-sm rounded">
+                      Jar Candle
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Card 2 - Glass Candle (Half height, middle column, top) */}
+              <div>
+                <div className="group relative overflow-hidden rounded-2xl bg-white shadow-lg transition-transform duration-300 hover:shadow-xl hover:-translate-y-1 h-full">
+                  <div className="relative h-full w-full overflow-hidden bg-gradient-to-br from-slate-100 to-slate-200">
+                    <img
+                      src="https://images.unsplash.com/photo-1599599810694-b5ac4dd94b7d?w=500&h=650&fit=crop&q=90"
+                      alt="Glass Candle"
+                      className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                  </div>
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/50 to-transparent px-6 py-6">
+                    <p className="bg-white/95 px-4 py-2.5 text-center text-sm font-semibold text-slate-950 backdrop-blur-sm rounded">
+                      Glass Candle
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Right Column - Contains two stacked cards */}
+              <div className="md:row-span-2 flex flex-col gap-6">
+                {/* Card 3 - Geometric Candles */}
+                <div className="flex-1">
+                  <div className="group relative overflow-hidden rounded-2xl bg-white shadow-lg transition-transform duration-300 hover:shadow-xl hover:-translate-y-1 h-full">
+                    <div className="relative h-full w-full overflow-hidden bg-gradient-to-br from-slate-100 to-slate-200">
+                      <img
+                        src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?w=500&h=650&fit=crop&q=90"
+                        alt="Geometric Candles"
+                        className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      />
+                    </div>
+                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/50 to-transparent px-6 py-6">
+                      <p className="bg-white/95 px-4 py-2.5 text-center text-sm font-semibold text-slate-950 backdrop-blur-sm rounded">
+                        Geometric Candles
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Card 4 - Ceramic Candle */}
+                <div className="flex-1">
+                  <div className="group relative overflow-hidden rounded-2xl bg-white shadow-lg transition-transform duration-300 hover:shadow-xl hover:-translate-y-1 h-full">
+                    <div className="relative h-full w-full overflow-hidden bg-gradient-to-br from-slate-100 to-slate-200">
+                      <img
+                        src="https://images.unsplash.com/photo-1544797701-6a27a9a0797d?w=500&h=650&fit=crop&q=90"
+                        alt="Ceramic Candle"
+                        className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      />
+                    </div>
+                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/50 to-transparent px-6 py-6">
+                      <p className="bg-white/95 px-4 py-2.5 text-center text-sm font-semibold text-slate-950 backdrop-blur-sm rounded">
+                        Ceramic Candle
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-16 text-center">
+              <a
+                href="#"
+                className="inline-flex items-center gap-3 bg-[#7b4d9d] px-8 py-4 text-sm font-medium text-white shadow-[0_10px_30px_rgba(123,77,157,0.2)] transition hover:-translate-y-0.5 hover:bg-[#8d60ad] hover:shadow-[0_12px_36px_rgba(123,77,157,0.28)]"
+              >
+                Explore All Collections
+                <span className="text-lg">→</span>
+              </a>
+            </div>
+          </div>
         </section>
       </main>
     </div>
