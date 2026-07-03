@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -28,7 +29,7 @@ const allProducts: Product[] = [
         id: "4",
         name: "Soy Off-White Twisted Candle",
         slug: "soy-off-white-twisted-candle",
-        image: "https://images.unsplash.com/photo-1602307332685-e2a43c63287f?w=800&q=90",
+        image: "https://picsum.photos/400/400?random=1",
         price: 10,
         isNew: false,
         rating: 5,
@@ -42,7 +43,7 @@ const allProducts: Product[] = [
         id: "8",
         name: "Knot Candle",
         slug: "knot-candle",
-        image: "https://images.unsplash.com/photo-1600466591411-07d0d51de80d?w=800&q=90",
+        image: "https://picsum.photos/400/400?random=2",
         price: 25,
         isNew: true,
         rating: 5,
@@ -57,7 +58,7 @@ const allProducts: Product[] = [
         id: "3",
         name: "Vanilla Soy Candle",
         slug: "vanilla-soy-candle",
-        image: "https://images.unsplash.com/photo-1594865011519-b1b7a01cd0b6?w=800&q=90",
+        image: "https://picsum.photos/400/400?random=3",
         price: 20,
         originalPrice: 25,
         discount: 20,
@@ -75,7 +76,7 @@ const allProducts: Product[] = [
         id: "6",
         name: "Moon Soy Wax Candle",
         slug: "moon-soy-wax-candle",
-        image: "https://images.unsplash.com/photo-1599599810694-ca3fb078cb64?w=800&q=90",
+        image: "https://picsum.photos/400/400?random=4",
         price: 15,
         originalPrice: 20,
         discount: 25,
@@ -94,7 +95,7 @@ const allProducts: Product[] = [
         id: "2",
         name: "White Ceramic Candle Holder Model",
         slug: "white-ceramic-candle-holder-model",
-        image: "https://images.unsplash.com/photo-1578500494198-246f612d03b3?w=800&q=90",
+        image: "https://picsum.photos/400/400?random=5",
         price: 21,
         isNew: false,
         rating: 4,
@@ -108,7 +109,7 @@ const allProducts: Product[] = [
         id: "5",
         name: "Nordic Style Ceramic Candle Holder",
         slug: "nordic-style-ceramic-holder",
-        image: "https://images.unsplash.com/photo-1577457689533-d89f6b9b4c12?w=800&q=90",
+        image: "https://picsum.photos/400/400?random=6",
         price: 15,
         originalPrice: 20,
         discount: 25,
@@ -125,7 +126,7 @@ const allProducts: Product[] = [
         id: "7",
         name: "Mermaid Candle",
         slug: "mermaid-candle",
-        image: "https://images.unsplash.com/photo-1615886371237-5e4c5a6621e0?w=800&q=90",
+        image: "https://picsum.photos/400/400?random=7",
         price: 15,
         isNew: true,
         rating: 3,
@@ -140,7 +141,7 @@ const allProducts: Product[] = [
         id: "1",
         name: "Beagle Paw Ceramic Candle Warmer",
         slug: "beagle-paw-ceramic-candle-warmer",
-        image: "https://images.unsplash.com/photo-1604628346881-b72b27e84530?w=800&q=90",
+        image: "https://picsum.photos/400/400?random=8",
         price: 12,
         originalPrice: 20,
         discount: 40,
@@ -214,9 +215,11 @@ function ProductCard({ product }: { product: Product }) {
         <div className="group">
             <div className="relative overflow-hidden rounded-lg bg-white shadow-sm transition-shadow hover:shadow-md">
                 <div className="relative h-72 w-full overflow-hidden bg-slate-100">
-                    <img
+                    <Image
                         src={product.image}
                         alt={product.name}
+                        width={300}
+                        height={288}
                         className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
                     />
 
@@ -365,11 +368,11 @@ export function Products() {
                             </button>
                         ))}
                     </div>
-                    <div className="flex flex-wrap gap-2">
+                    <div className="flex flex-wrap gap-2 sm:gap-3">
                         <select
                             value={filterScent || ""}
                             onChange={(e) => setFilterScent(e.target.value || null)}
-                            className="rounded border border-slate-300 px-3 py-2 text-sm"
+                            className="rounded border-2 border-[#7b4d9d] bg-white px-4 py-2 text-sm font-medium text-[#000000] transition hover:bg-[#7b4d9d]/5 focus:outline-none focus:ring-2 focus:ring-[#7b4d9d]/30"
                         >
                             {scents.map((scent) => (
                                 <option key={scent.value || "null"} value={scent.value || ""}>
@@ -380,7 +383,7 @@ export function Products() {
                         <select
                             value={sortBy}
                             onChange={(e) => setSortBy(e.target.value as any)}
-                            className="rounded border border-slate-300 px-3 py-2 text-sm"
+                            className="rounded border-2 border-[#7b4d9d] bg-white px-4 py-2 text-sm font-medium text-[#000000] transition hover:bg-[#7b4d9d]/5 focus:outline-none focus:ring-2 focus:ring-[#7b4d9d]/30"
                         >
                             {sortOptions.map((opt) => (
                                 <option key={opt.value} value={opt.value}>
@@ -407,6 +410,6 @@ export function Products() {
                     </Link>
                 </div>
             </div>
-        </section>
+        </section >
     );
 }
