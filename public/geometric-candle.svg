@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-label="Geometric candle illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#efe9e1"/>
+      <stop offset="100%" stop-color="#c8b7aa"/>
+    </linearGradient>
+    <linearGradient id="marble" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f9f2ea"/>
+      <stop offset="100%" stop-color="#d9cfc4"/>
+    </linearGradient>
+    <linearGradient id="wax" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff2d1"/>
+      <stop offset="45%" stop-color="#ffd267"/>
+      <stop offset="100%" stop-color="#ff9e3a"/>
+    </linearGradient>
+    <radialGradient id="flame" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#fff7da"/>
+      <stop offset="55%" stop-color="#ffd86f"/>
+      <stop offset="100%" stop-color="#ff8e1a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <ellipse cx="400" cy="840" rx="250" ry="62" fill="#000" opacity="0.14"/>
+  <circle cx="610" cy="720" r="120" fill="#5d6b50" opacity="0.18"/>
+  <path d="M250 235L560 190L610 650L300 700Z" fill="url(#marble)" stroke="#bcaea1" stroke-width="6"/>
+  <path d="M315 295L530 262L565 600L345 632Z" fill="#f6ede3" opacity="0.55"/>
+  <ellipse cx="420" cy="220" rx="140" ry="28" fill="#d1c3b6"/>
+  <ellipse cx="420" cy="215" rx="132" ry="20" fill="#9f8d7f" opacity="0.35"/>
+  <circle cx="420" cy="385" r="94" fill="url(#flame)"/>
+  <path d="M420 290c-18 18-36 50-36 82 0 31 16 59 36 59s36-28 36-59c0-32-18-64-36-82Z" fill="#fff9dc"/>
+  <path d="M420 305c-12 14-24 37-24 56 0 18 10 36 24 36s24-18 24-36c0-19-12-42-24-56Z" fill="#ffb33c"/>
+  <rect x="412" y="245" width="16" height="50" rx="8" fill="#3d2c1f"/>
+  <path d="M260 718l290-52 42 162-290 52Z" fill="#9a6748" opacity="0.85"/>
+  <path d="M270 735l265-48 25 94-264 47Z" fill="#f0d6bf" opacity="0.16"/>
+  <path d="M350 563h160l-18 105H368z" fill="#ffffff" opacity="0.22"/>
+  <path d="M320 595h115l-12 70H332z" fill="#ffffff" opacity="0.18"/>
+</svg>

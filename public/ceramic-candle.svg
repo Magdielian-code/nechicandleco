@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-label="Ceramic candle illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d8c7bb"/>
+      <stop offset="45%" stop-color="#8b7264"/>
+      <stop offset="100%" stop-color="#2a201e"/>
+    </linearGradient>
+    <linearGradient id="ceramic" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f1ede8"/>
+      <stop offset="100%" stop-color="#9a9996"/>
+    </linearGradient>
+    <radialGradient id="flame" cx="50%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#fff9de"/>
+      <stop offset="55%" stop-color="#ffd86a"/>
+      <stop offset="100%" stop-color="#ff8e1a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <ellipse cx="520" cy="300" rx="180" ry="110" fill="#ffffff" opacity="0.08"/>
+  <circle cx="150" cy="770" r="90" fill="#0d0a0b" opacity="0.24"/>
+  <path d="M560 220c70 70 116 160 118 250 2 74-30 152-108 225H240c-74-76-105-160-96-248 12-118 91-206 166-260Z" fill="#3a2d29" opacity="0.28"/>
+  <rect x="245" y="350" width="310" height="380" rx="36" fill="url(#ceramic)" stroke="#d7d0c9" stroke-width="8"/>
+  <rect x="275" y="372" width="250" height="28" rx="14" fill="#e8e3de"/>
+  <ellipse cx="400" cy="370" rx="132" ry="24" fill="#c9bfb7" opacity="0.85"/>
+  <ellipse cx="400" cy="364" rx="122" ry="18" fill="#8f8580" opacity="0.4"/>
+  <circle cx="400" cy="330" r="88" fill="url(#flame)"/>
+  <path d="M400 240c-18 18-36 52-36 84 0 32 16 60 36 60s36-28 36-60c0-32-18-66-36-84Z" fill="#fff9dc"/>
+  <path d="M400 256c-12 15-24 39-24 58 0 21 10 38 24 38s24-17 24-38c0-19-12-43-24-58Z" fill="#ffb33c"/>
+  <rect x="392" y="200" width="16" height="54" rx="8" fill="#3d2c1f"/>
+  <path d="M185 732c115-58 221-58 310 0 38 24 84 38 127 30 36-7 58-20 91-40l28 62H165Z" fill="#f2f2f0" opacity="0.16"/>
+  <circle cx="602" cy="810" r="106" fill="#fff" opacity="0.14"/>
+  <ellipse cx="530" cy="810" rx="200" ry="40" fill="#f7d8ad" opacity="0.24"/>
+</svg>

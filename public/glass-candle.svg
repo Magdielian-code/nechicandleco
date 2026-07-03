@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-label="Glass candle illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#efe7df"/>
+      <stop offset="55%" stop-color="#d8cabd"/>
+      <stop offset="100%" stop-color="#b59a83"/>
+    </linearGradient>
+    <linearGradient id="table" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7a5b47"/>
+      <stop offset="100%" stop-color="#4e3629"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8a23c" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#6e2711" stop-opacity="0.92"/>
+    </linearGradient>
+    <radialGradient id="flame" cx="50%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#fff8dd"/>
+      <stop offset="55%" stop-color="#ffd36b"/>
+      <stop offset="100%" stop-color="#ff8a1e" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <rect x="0" y="740" width="800" height="260" fill="url(#table)"/>
+  <ellipse cx="160" cy="790" rx="80" ry="34" fill="#000" opacity="0.12"/>
+  <ellipse cx="600" cy="785" rx="120" ry="40" fill="#000" opacity="0.14"/>
+  <path d="M100 260c120 60 170 50 270 10 85-34 150-43 210-15 60 28 91 77 120 120v365H100Z" fill="#f4efe9" opacity="0.55"/>
+  <path d="M130 185c60 140 140 210 220 230 88 22 193-7 295-80 43-31 84-71 125-122" fill="none" stroke="#8aa171" stroke-width="22" stroke-linecap="round" opacity="0.45"/>
+  <path d="M330 115c10 44 8 66-12 104" fill="none" stroke="#7b4d9d" stroke-width="6" opacity="0.25"/>
+  <path d="M520 115c16 38 18 67 8 104" fill="none" stroke="#7b4d9d" stroke-width="6" opacity="0.25"/>
+  <rect x="300" y="380" width="200" height="320" rx="38" fill="url(#glass)" stroke="#c27a34" stroke-width="8"/>
+  <rect x="317" y="393" width="166" height="22" rx="11" fill="#c06b22" opacity="0.8"/>
+  <ellipse cx="400" cy="410" rx="100" ry="20" fill="#d98f36" opacity="0.6"/>
+  <circle cx="400" cy="360" r="88" fill="url(#flame)"/>
+  <path d="M400 245c-20 20-38 54-38 86 0 34 17 64 38 64s38-30 38-64c0-32-18-66-38-86Z" fill="#fff9dc"/>
+  <path d="M400 260c-13 15-25 40-25 60 0 20 11 40 25 40s25-20 25-40c0-20-12-45-25-60Z" fill="#ffb33c"/>
+  <rect x="392" y="195" width="16" height="54" rx="8" fill="#3d2c1f"/>
+  <ellipse cx="400" cy="718" rx="122" ry="18" fill="#000" opacity="0.16"/>
+  <rect x="250" y="710" width="300" height="22" rx="11" fill="#b88d61" opacity="0.45"/>
+</svg>
