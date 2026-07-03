@@ -17,119 +17,158 @@ interface Product {
     colors?: string[];
     hasTimer?: boolean;
     timerDays?: number;
+    category: "candles" | "holders" | "warmers";
+    scent?: "vanilla" | "floral" | "fruity" | "fresh" | "woody" | null;
+    soldCount: number;
+    dateAdded: Date;
 }
 
-const products: Product[] = [
-    {
-        id: "1",
-        name: "Beagle Paw Ceramic Candle Warmer",
-        slug: "beagle-paw-ceramic-candle-warmer",
-        image: "/beagle-paw-candle.jpg",
-        price: 12,
-        originalPrice: 20,
-        discount: 40,
-        isNew: true,
-        rating: 0,
-        reviews: 0,
-    },
-    {
-        id: "2",
-        name: "White Ceramic Candle Holder Model",
-        slug: "white-ceramic-candle-holder-model",
-        image: "/white-ceramic-holder.jpg",
-        price: 21,
-        isNew: false,
-        rating: 0,
-        reviews: 0,
-    },
-    {
-        id: "3",
-        name: "Vanilla Soy Candle",
-        slug: "vanilla-soy-candle",
-        image: "/vanilla-soy-candle.jpg",
-        price: 20,
-        originalPrice: 25,
-        discount: 20,
-        isNew: true,
-        rating: 0,
-        reviews: 0,
-        hasTimer: true,
-        timerDays: 763,
-    },
+const allProducts: Product[] = [
     {
         id: "4",
         name: "Soy Off-White Twisted Candle",
         slug: "soy-off-white-twisted-candle",
-        image: "/soy-twisted-candle.jpg",
+        image: "https://images.unsplash.com/photo-1602307332685-e2a43c63287f?w=800&q=90",
         price: 10,
         isNew: false,
-        rating: 4,
-        reviews: 0,
-    },
-    {
-        id: "5",
-        name: "Nordic Style Ceramic Candle Holder",
-        slug: "nordic-style-ceramic-holder",
-        image: "/nordic-ceramic-holder.jpg",
-        price: 15,
-        originalPrice: 20,
-        discount: 25,
-        isNew: true,
-        rating: 0,
-        reviews: 0,
-        colors: ["#FFFFFF", "#808080", "#8B0000"],
-    },
-    {
-        id: "6",
-        name: "Moon Soy Wax Candle",
-        slug: "moon-soy-wax-candle",
-        image: "/moon-soy-candle.jpg",
-        price: 15,
-        originalPrice: 20,
-        discount: 25,
-        isNew: true,
-        rating: 0,
-        reviews: 0,
-        colors: ["#FFC0CB", "#FFFF00"],
-        hasTimer: true,
-        timerDays: 608,
-    },
-    {
-        id: "7",
-        name: "Mermaid Candle",
-        slug: "mermaid-candle",
-        image: "/mermaid-candle.jpg",
-        price: 15,
-        isNew: true,
-        rating: 0,
-        reviews: 0,
-        colors: ["#FFC0CB"],
+        rating: 5,
+        reviews: 287,
+        category: "candles",
+        scent: "vanilla",
+        soldCount: 1240,
+        dateAdded: new Date("2025-10-15"),
     },
     {
         id: "8",
         name: "Knot Candle",
         slug: "knot-candle",
-        image: "/knot-candle.jpg",
+        image: "https://images.unsplash.com/photo-1600466591411-07d0d51de80d?w=800&q=90",
         price: 25,
         isNew: true,
-        rating: 4,
-        reviews: 0,
+        rating: 5,
+        reviews: 156,
         colors: ["#FFFFFF", "#8B0000"],
+        category: "candles",
+        scent: "floral",
+        soldCount: 892,
+        dateAdded: new Date("2026-06-20"),
+    },
+    {
+        id: "3",
+        name: "Vanilla Soy Candle",
+        slug: "vanilla-soy-candle",
+        image: "https://images.unsplash.com/photo-1594865011519-b1b7a01cd0b6?w=800&q=90",
+        price: 20,
+        originalPrice: 25,
+        discount: 20,
+        isNew: true,
+        rating: 4,
+        reviews: 203,
+        hasTimer: true,
+        timerDays: 763,
+        category: "candles",
+        scent: "vanilla",
+        soldCount: 756,
+        dateAdded: new Date("2026-06-25"),
+    },
+    {
+        id: "6",
+        name: "Moon Soy Wax Candle",
+        slug: "moon-soy-wax-candle",
+        image: "https://images.unsplash.com/photo-1599599810694-ca3fb078cb64?w=800&q=90",
+        price: 15,
+        originalPrice: 20,
+        discount: 25,
+        isNew: true,
+        rating: 4,
+        reviews: 134,
+        colors: ["#FFC0CB", "#FFFF00"],
+        hasTimer: true,
+        timerDays: 608,
+        category: "candles",
+        scent: "fruity",
+        soldCount: 645,
+        dateAdded: new Date("2026-06-22"),
+    },
+    {
+        id: "2",
+        name: "White Ceramic Candle Holder Model",
+        slug: "white-ceramic-candle-holder-model",
+        image: "https://images.unsplash.com/photo-1578500494198-246f612d03b3?w=800&q=90",
+        price: 21,
+        isNew: false,
+        rating: 4,
+        reviews: 89,
+        category: "holders",
+        scent: null,
+        soldCount: 423,
+        dateAdded: new Date("2025-12-10"),
+    },
+    {
+        id: "5",
+        name: "Nordic Style Ceramic Candle Holder",
+        slug: "nordic-style-ceramic-holder",
+        image: "https://images.unsplash.com/photo-1577457689533-d89f6b9b4c12?w=800&q=90",
+        price: 15,
+        originalPrice: 20,
+        discount: 25,
+        isNew: true,
+        rating: 4,
+        reviews: 76,
+        colors: ["#FFFFFF", "#808080", "#8B0000"],
+        category: "holders",
+        scent: null,
+        soldCount: 312,
+        dateAdded: new Date("2026-06-18"),
+    },
+    {
+        id: "7",
+        name: "Mermaid Candle",
+        slug: "mermaid-candle",
+        image: "https://images.unsplash.com/photo-1615886371237-5e4c5a6621e0?w=800&q=90",
+        price: 15,
+        isNew: true,
+        rating: 3,
+        reviews: 42,
+        colors: ["#FFC0CB"],
+        category: "candles",
+        scent: "fresh",
+        soldCount: 189,
+        dateAdded: new Date("2026-06-28"),
+    },
+    {
+        id: "1",
+        name: "Beagle Paw Ceramic Candle Warmer",
+        slug: "beagle-paw-ceramic-candle-warmer",
+        image: "https://images.unsplash.com/photo-1604628346881-b72b27e84530?w=800&q=90",
+        price: 12,
+        originalPrice: 20,
+        discount: 40,
+        isNew: true,
+        rating: 3,
+        reviews: 31,
+        category: "warmers",
+        scent: null,
+        soldCount: 127,
+        dateAdded: new Date("2026-06-30"),
     },
 ];
 
-function StarRating({ rating }: { rating: number }) {
+function StarRating({ rating, reviews }: { rating: number; reviews: number }) {
     return (
-        <div className="flex items-center gap-0.5">
-            {[...Array(5)].map((_, i) => (
-                <svg
-                    key={i}
-                    className={`h-4 w-4 ${i < rating ? "fill-slate-900" : "fill-slate-300"}`}
-                    viewBox="0 0 24 24"
-                >
-                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                </svg>
-            ))}
+        <div className="flex items-center gap-1.5">
+            <div className="flex items-center gap-0.5">
+                {[...Array(5)].map((_, i) => (
+                    <svg
+                        key={i}
+                        className={`h-4 w-4 ${i < rating ? "fill-slate-900" : "fill-slate-300"}`}
+                        viewBox="0 0 24 24"
+                    >
+                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                    </svg>
+                ))}
+            </div>
+            {reviews > 0 && <span className="text-xs text-slate-500">({reviews})</span>}
         </div>
     );
 }
@@ -198,17 +237,13 @@ function ProductCard({ product }: { product: Product }) {
                     <button
                         onClick={toggleCart}
                         className={`absolute bottom-4 right-4 flex h-10 w-10 items-center justify-center rounded-full shadow-lg transition-all ${isInCart
-                                ? "bg-[#7b4d9d] text-white"
-                                : "bg-white text-[#7b4d9d] hover:bg-[#7b4d9d] hover:text-white"
+                            ? "bg-[#7b4d9d] text-white"
+                            : "bg-white text-[#7b4d9d] hover:bg-[#7b4d9d] hover:text-white"
                             }`}
                         title={isInCart ? "Remove from cart" : "Add to cart"}
                     >
                         <svg className="h-5 w-5 fill-current" viewBox="0 0 24 24">
-                            {isInCart ? (
-                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" />
-                            ) : (
-                                <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
-                            )}
+                            <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z" />
                         </svg>
                     </button>
                 </div>
@@ -222,7 +257,7 @@ function ProductCard({ product }: { product: Product }) {
                     </Link>
 
                     <div className="mt-2">
-                        <StarRating rating={product.rating} />
+                        <StarRating rating={product.rating} reviews={product.reviews} />
                     </div>
 
                     <div className="mt-3 flex items-center gap-2">
@@ -253,6 +288,49 @@ function ProductCard({ product }: { product: Product }) {
 }
 
 export function Products() {
+    const [filterCategory, setFilterCategory] = useState<"all" | "candles" | "holders" | "warmers">("all");
+    const [filterScent, setFilterScent] = useState<string | null>(null);
+    const [sortBy, setSortBy] = useState<"bestselling" | "latest" | "toprated" | "priceLow">("bestselling");
+
+    const categories = [
+        { value: "all", label: "All Products" },
+        { value: "candles", label: "Candles" },
+        { value: "holders", label: "Holders" },
+        { value: "warmers", label: "Warmers" },
+    ];
+
+    const scents = [
+        { value: null, label: "All Scents" },
+        { value: "vanilla", label: "Vanilla" },
+        { value: "floral", label: "Floral" },
+        { value: "fruity", label: "Fruity" },
+        { value: "fresh", label: "Fresh" },
+        { value: "woody", label: "Woody" },
+    ];
+
+    const sortOptions = [
+        { value: "bestselling", label: "Most Sold" },
+        { value: "latest", label: "Latest Added" },
+        { value: "toprated", label: "Top Rated" },
+        { value: "priceLow", label: "Price: Low to High" },
+    ];
+
+    let filteredProducts = allProducts.filter((product) => {
+        const categoryMatch = filterCategory === "all" || product.category === filterCategory;
+        const scentMatch = filterScent === null || filterScent === "All Scents" || product.scent === filterScent;
+        return categoryMatch && scentMatch;
+    });
+
+    if (sortBy === "bestselling") {
+        filteredProducts.sort((a, b) => b.soldCount - a.soldCount);
+    } else if (sortBy === "latest") {
+        filteredProducts.sort((a, b) => b.dateAdded.getTime() - a.dateAdded.getTime());
+    } else if (sortBy === "toprated") {
+        filteredProducts.sort((a, b) => b.rating - a.rating || b.reviews - a.reviews);
+    } else if (sortBy === "priceLow") {
+        filteredProducts.sort((a, b) => a.price - b.price);
+    }
+
     return (
         <section className="bg-white py-20 sm:py-28 lg:py-32">
             <div className="mx-auto max-w-[1600px] px-5 sm:px-8 lg:px-12">
@@ -272,8 +350,49 @@ export function Products() {
                     </h2>
                 </div>
 
+                <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+                    <div className="flex flex-wrap gap-3">
+                        {categories.map((cat) => (
+                            <button
+                                key={cat.value}
+                                onClick={() => setFilterCategory(cat.value as any)}
+                                className={`px-4 py-2 text-sm font-medium rounded transition ${filterCategory === cat.value
+                                    ? "bg-[#7b4d9d] text-white"
+                                    : "bg-slate-100 text-slate-700 hover:bg-slate-200"
+                                    }`}
+                            >
+                                {cat.label}
+                            </button>
+                        ))}
+                    </div>
+                    <div className="flex flex-wrap gap-2">
+                        <select
+                            value={filterScent || ""}
+                            onChange={(e) => setFilterScent(e.target.value || null)}
+                            className="rounded border border-slate-300 px-3 py-2 text-sm"
+                        >
+                            {scents.map((scent) => (
+                                <option key={scent.value || "null"} value={scent.value || ""}>
+                                    {scent.label}
+                                </option>
+                            ))}
+                        </select>
+                        <select
+                            value={sortBy}
+                            onChange={(e) => setSortBy(e.target.value as any)}
+                            className="rounded border border-slate-300 px-3 py-2 text-sm"
+                        >
+                            {sortOptions.map((opt) => (
+                                <option key={opt.value} value={opt.value}>
+                                    {opt.label}
+                                </option>
+                            ))}
+                        </select>
+                    </div>
+                </div>
+
                 <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-                    {products.map((product) => (
+                    {filteredProducts.map((product) => (
                         <ProductCard key={product.id} product={product} />
                     ))}
                 </div>
