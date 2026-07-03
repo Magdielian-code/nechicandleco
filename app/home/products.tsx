@@ -372,7 +372,7 @@ export function Products() {
                         <select
                             value={filterScent || ""}
                             onChange={(e) => setFilterScent(e.target.value || null)}
-                            className="rounded border-2 border-[#7b4d9d] bg-white px-4 py-2 text-sm font-medium text-[#000000] transition hover:bg-[#7b4d9d]/5 focus:outline-none focus:ring-2 focus:ring-[#7b4d9d]/30"
+                            className="rounded border-2 border-[#7b4d9d] bg-white px-4 py-2 text-sm font-medium text-slate-900 transition hover:bg-[#7b4d9d]/5 focus:outline-none focus:ring-2 focus:ring-[#7b4d9d]/30"
                         >
                             {scents.map((scent) => (
                                 <option key={scent.value || "null"} value={scent.value || ""}>
@@ -383,7 +383,7 @@ export function Products() {
                         <select
                             value={sortBy}
                             onChange={(e) => setSortBy(e.target.value as any)}
-                            className="rounded border-2 border-[#7b4d9d] bg-white px-4 py-2 text-sm font-medium text-[#000000] transition hover:bg-[#7b4d9d]/5 focus:outline-none focus:ring-2 focus:ring-[#7b4d9d]/30"
+                            className="rounded border-2 border-[#7b4d9d] bg-white px-4 py-2 text-sm font-medium text-slate-900 transition hover:bg-[#7b4d9d]/5 focus:outline-none focus:ring-2 focus:ring-[#7b4d9d]/30"
                         >
                             {sortOptions.map((opt) => (
                                 <option key={opt.value} value={opt.value}>
